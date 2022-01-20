@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Dmitry Mazhukin](https://up.htmlacademy.ru/htmlcss/33/user/1811947).
-* Наставник: `Неизвестно`.
+* Наставник: [Konstantin Cherepanov](https://htmlacademy.ru/profile/ccher)
 
 ---
 
