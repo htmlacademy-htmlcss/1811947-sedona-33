@@ -35,6 +35,16 @@ color: black;
   text-transform: uppercase;
 }
 
+.button-want {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: #756257;
+  border-radius: 4px;
+}
+
 .main-index {
   color: black;
   background-color: white;
@@ -175,7 +185,7 @@ color: black;
   display: flex;
 }
 
-.button {
+.button-sub {
   font-size: 20px;
   line-height: 26px;
   display: flex;
@@ -193,6 +203,122 @@ color: black;
 .number {
   font-size: 40px;
   line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+
+.hotel-filter-inner {
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  background-image: url(../images/catalog-background\ 1\ \(1\).jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-item {
+  font-size: 16px;
+  line-height: 21px;
+  color: white;
+}
+
+.hotel-filter {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.hotel-filter-item {
+  font-size: 18px;
+  line-height: 23px;
+
+}
+
+.sedona-hotels {
+  font-size: 18px;
+  line-height: 23px;
+  color: black;
+  background-color: white;
+}
+
+.hotels-find {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+
+.hotel-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+.hotel-card-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.more {
+  background-color: #756257;
+  border-radius: 4px;
+}
+
+.favorites {
+  background-color: #83B3D3;
+  border-radius: 4px;
+}
+
+.hotel-rating {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+.pagination-show-more {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: #83B3D3;
+  border-radius: 4px;
+}
+
+.pagination-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: #83B3D3;
+  border-radius: 4px;
+}
+
+.pagination-current {
+  color: black;
+  background-color: #F2F2F2;
+}
+
+.mailing-inner {
+  font-size: 30px;
+  line-height: 36px;
   text-align: center;
   text-transform: uppercase;
   color: black;
