@@ -13,7 +13,16 @@
   src: url(fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
+
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
@@ -22,8 +31,30 @@ body {
 }
 
 .page-header {
+margin: 0 auto;
+display: flex;
 background-color: white;
 color: black;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list-menu {
+  width: 475px;
+}
+
+.navigation-list-user {
+  width: 300px;
+  margin-left: auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-link {
@@ -45,9 +76,23 @@ color: black;
   border-radius: 4px;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .main-index {
   color: black;
   background-color: white;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
 }
 
 .sedona-logo {
@@ -55,7 +100,21 @@ color: black;
   background-size: 100% auto;
 }
 
+.about {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.index-flex {
+  display: flex;
+  padding: 0 auto;
+  flex-wrap: wrap;
+}
+
 .number-one {
+  width: 400px;
+  height: 384px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -71,6 +130,8 @@ color: black;
 }
 
 .housing {
+  width: 400px;
+  height: 384px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -80,6 +141,8 @@ color: black;
 }
 
 .food {
+  width: 400px;
+  height: 384px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -89,6 +152,8 @@ color: black;
 }
 
 .souvenirs {
+  width: 400px;
+  height: 384px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -98,6 +163,8 @@ color: black;
 }
 
 .number-two {
+  width: 400px;
+  height: 384px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -107,6 +174,8 @@ color: black;
 }
 
 .number-three {
+  width: 400px;
+  height: 384px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -116,6 +185,8 @@ color: black;
 }
 
 .number-four {
+  width: 400px;
+  height: 384px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -125,6 +196,8 @@ color: black;
 }
 
 .number-five {
+  width: 400px;
+  height: 384px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -197,22 +270,47 @@ color: black;
 }
 
 .page-footer {
+  width: 100%;
   background-color: white;
 }
 
-.number {
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  width: 107px;
+  margin-right: 61px;
+}
+
+.page-footer-number {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
   color: black;
+  width: 720px;
+  margin-top: 40px;
+}
+
+.page-footer-href {
+  text-align: center;
+  width: 115px;
+  margin-top: 42px;
+  margin-right: 72px;
+  margin-bottom: 44px;
+  margin-left: 53px;
 }
 
 .hotel-filter-inner {
+  width: 1200px;
+  display: flex;
   text-transform: uppercase;
   color: white;
   background-color: black;
-  background-image: url(../images/catalog-background\ 1\ \(1\).jpg);
+  background-image: url(../images/catalog-background-1.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -235,6 +333,7 @@ color: black;
 }
 
 .sedona-hotels {
+  display: flex;
   font-size: 18px;
   line-height: 23px;
   color: black;
@@ -242,10 +341,34 @@ color: black;
 }
 
 .hotels-find {
+  width: 337px;
+  margin-right: 0 auto;
   font-size: 30px;
   font-weight: 700;
   line-height: 39px;
   text-transform: uppercase;
+}
+
+.inner-sorting {
+  display: flex;
+  width: 1057px;
+  margin: 0 auto;
+  margin-top: 44px;
+}
+
+.select-control {
+  width: 287px;
+  margin-left: 192px;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+
+
+.inner-hotels-card {
+  display: flex;
+  margin-top: 53px;
 }
 
 .hotel-card-title {
@@ -323,3 +446,4 @@ color: black;
   text-transform: uppercase;
   color: black;
 }
+
