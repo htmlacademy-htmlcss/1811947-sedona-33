@@ -9,7 +9,7 @@
     <header class="page-header">
       <img class="logo-sedona" src="images/logo.svg" width="139" height="70" alt="Логотип Седона">
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-list-menu">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
@@ -20,7 +20,7 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-          <ul class="navigation-user">
+          <ul class="navigation-list navigation-list-user">
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">
@@ -39,24 +39,26 @@
               <a class="navigation-link button-want" href="#">Хочу Сюда!</a>
             </li>
           </ul>
-
-
       </nav>
 
     </header>
-    <main class="main-index">
-      <h1 class="visually-hidden">Sedona</h1>
-      <div class="sedona-logo">
-      <img class="logo" src="images/Vector.svg" alt="Добро пожаловать">
-      <img class="logo" src="images/to the gorgeus.svg" alt="В Великолепную">
-      <img calss="logo" src="images/sedona.svg" alt="Седону">
-      </div>
+    <main class=" main-container main-index">
+      <div class="page-container">
+        <h1 class="visually-hidden">Sedona</h1>
+        <section class="sedona-logo">
+          <div class="welcome">
+      <img class="logo" src="images/vector.svg" alt="добро пожаловать">
+      <img class="logo" src="images/to-the-gorgeus.svg" alt="в великолепную">
+      <img class="logo" src="images/sedona.svg" alt="седону">
+          </div>
+        </section>
         <section class="about">
-          <h2>Седона — небольшой городок в Аризоне,
+          <h2 class="about-sedona">Седона — небольшой городок в Аризоне,
             заслуживающий большего!</h2>
             <p class="benifits">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
-          <h2 class="visually-hidden">Преимущества</h2>
+          <h2 class="adventages visually-hidden">Преимущества</h2>
+        <div class="index-flex">
           <section class="number-one">
             <h3 class="number-one-legend">Настоящий
               городок</h3>
@@ -106,6 +108,8 @@
               <p class="adventages-number">— №5 —</p>
               <p class="adventages-description">Большинство едет в Гранд Каньон и толпится там</p>
           </section>
+        </div>
+
           <section class="hotel">
             <h2 class="visually-hidden hotel-search">Поиск гостиницы</h2>
               <h3 class="hotel-search-question">Заинтересовались?</h3>
@@ -114,9 +118,10 @@
                 </p>
                 <button class="hotel-find">поиск гостиницы в седоне</button>
           </section>
+
           <section class="mailing">
             <h3 class="mailing-sub">Подпишитесь на рассылку</h3>
-              <p class="mailing-description">Только полезная информация и никакого спама,
+              <p class="mailing-description mailing-description-inner">Только полезная информация и никакого спама,<br>
                 честное бойскаутское!</p>
                 <form class="mailing-form" action="https://echo.htmlacademy.ru/"
                 method="post">
@@ -124,10 +129,12 @@
                   <button class="button-sub" type="submit" >Подписаться</button>
                 </form>
           </section>
+      </div>
     </main>
 
     <footer class="page-footer">
-      <section class="footer-contacst">
+      <div class="page-footer-container">
+      <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -149,11 +156,14 @@
             </a>
           </li>
         </ul>
-        <p class="number">+7 (812) 812-12-12</p>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">htmlacademy</a>
       </section>
+      <div class="page-footer-number">
+        <p class="number">+7 (812) 812-12-12</p>
+      </div>
+      <div class="page-footer-href">
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">htmlacademy</a>
+      </div>
+      </div>
     </footer>
-
-
   </body>
 </html>

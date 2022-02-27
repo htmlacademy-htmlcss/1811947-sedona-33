@@ -13,7 +13,16 @@
   src: url(fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
+
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
@@ -21,14 +30,57 @@ body {
   background-color: white;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 .page-header {
+margin: 0 auto;
+display: flex;
 background-color: white;
 color: black;
 }
 
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list-menu {
+  margin-left: 30px;
+  width: 475px;
+}
+
+.navigation-list-user {
+  min-width: 42px;
+  min-height: 66px;
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .navigation-link {
+  display: block;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
+  padding: 34px 20px;
   color: black;
   background-color: white;
   text-decoration: none;
@@ -45,17 +97,79 @@ color: black;
   border-radius: 4px;
 }
 
+.main-container {
+  flex-grow: 1;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .main-index {
   color: black;
   background-color: white;
 }
 
+.main-inner {
+  margin: 0 auto;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 458px;
+  height: 352px;
+  padding-top: 67px;
+  padding-bottom: 67px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .sedona-logo {
+  width: 1200px;
+  height: 485px;
   background-image: url("../images/index-bg.jpg");
   background-size: 100% auto;
 }
 
+.about {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.about-sedona{
+  margin-top: 63px;
+  margin-bottom: 31px;
+}
+
+.benifits {
+  margin-bottom: 80px;
+}
+
+.index-flex {
+  display: flex;
+  padding: 0 auto;
+  flex-wrap: wrap;
+}
+
+.index-flex:last-child {
+  margin-bottom: 0;
+}
+
+
 .number-one {
+  width: 400px;
+  height: 384px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -65,12 +179,16 @@ color: black;
 }
 
 .adventages-description {
+  padding-top: 23px;
+  padding-bottom: 79px;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
 }
 
 .housing {
+  width: 400px;
+  height: 384px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -80,6 +198,8 @@ color: black;
 }
 
 .food {
+  width: 400px;
+  height: 384px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -89,6 +209,8 @@ color: black;
 }
 
 .souvenirs {
+  width: 400px;
+  height: 384px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -98,6 +220,8 @@ color: black;
 }
 
 .number-two {
+  width: 400px;
+  height: 384px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -107,6 +231,8 @@ color: black;
 }
 
 .number-three {
+  width: 400px;
+  height: 384px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -116,6 +242,8 @@ color: black;
 }
 
 .number-four {
+  width: 400px;
+  height: 384px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -125,6 +253,8 @@ color: black;
 }
 
 .number-five {
+  width: 400px;
+  height: 384px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -135,11 +265,16 @@ color: black;
 
 .hotel {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hotel-search-question {
   font-size: 30px;
   line-height: 36px;
+  margin-top: 91px;
+  margin-bottom: 29px;
   text-align: center;
   text-transform: uppercase;
   color: black;
@@ -148,6 +283,7 @@ color: black;
 .hotel-search-description {
   font-size: 22px;
   line-height: 26px;
+  margin-bottom: 56px;
   text-align: center;
 }
 
@@ -155,6 +291,7 @@ color: black;
   font-family: inherit;
   font-size: 20px;
   line-height: 36px;
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: white;
@@ -163,8 +300,13 @@ color: black;
 }
 
 .mailing {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 411px;
   font-size: 30px;
   line-height: 36px;
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: white;
@@ -173,9 +315,16 @@ color: black;
   background-size: 100% auto;
 }
 
+.mailing-sub {
+  margin-top: 94px;
+  margin-bottom: 29px;
+}
+
 .mailing-description {
   font-size: 22px;
   line-height: 26px;
+  margin-top: 29px;
+  margin-bottom: 46px;
 }
 
 .email {
@@ -197,30 +346,70 @@ color: black;
 }
 
 .page-footer {
+  width: 100%;
   background-color: white;
 }
 
-.number {
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  width: 107px;
+  margin-top: 49px;
+  margin-right: 61px;
+  margin-bottom: 53px;
+  margin-left: 72px;
+  list-style-type: none;
+}
+
+.page-footer-number {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
   color: black;
+  width: 720px;
+  margin-top: 40px;
+}
+
+.page-footer-href {
+  text-align: center;
+  width: 115px;
+  margin-top: 42px;
+  margin-right: 72px;
+  margin-bottom: 44px;
+  margin-left: 53px;
 }
 
 .hotel-filter-inner {
+  width: 1200px;
+  height: 408px;
+  display: flex;
   text-transform: uppercase;
   color: white;
   background-color: black;
-  background-image: url(../images/catalog-background\ 1\ \(1\).jpg);
+  background-image: url(../images/catalog-background-1.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
+.header-inner-title {
+  margin-left: 71px;
+  margin-top: 35px;
+}
+
 .breadcrumbs-item {
+  display: flex;
+  margin-left: 71px;
+  margin-top: 8px;
+  padding: 0;
   font-size: 16px;
   line-height: 21px;
   color: white;
+  list-style-type: none;
 }
 
 .hotel-filter {
@@ -231,21 +420,80 @@ color: black;
 .hotel-filter-item {
   font-size: 18px;
   line-height: 23px;
-
 }
 
-.sedona-hotels {
-  font-size: 18px;
-  line-height: 23px;
-  color: black;
-  background-color: white;
+.button-filtr {
+  display: flex;
+  width: 160px;
+  height: 48px;
+  background-color: #83B3D3;
+  border-radius: 4px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .hotels-find {
+  width: 337px;
+  height: 39px;
+  margin-right: 0 auto;
   font-size: 30px;
   font-weight: 700;
   line-height: 39px;
   text-transform: uppercase;
+}
+
+.inner-sorting {
+  display: flex;
+  width: 1057px;
+  height: 48px;
+  margin: 0 auto;
+  margin-top: 44px;
+  margin-bottom: 53px;
+  align-content: center;
+}
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  background-color: #756257;
+  border-radius: 4px;
+}
+
+.button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.select-control {
+  width: 287px;
+  margin-left: 192px;
+  margin-right: 81px;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+.inner-hotels-card {
+  display: flex;
+  margin-top: 53px;
+}
+
+.sedona-hotels {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 23px;
+  color: black;
+  background-color: white;
 }
 
 .hotel-card-title {
@@ -286,6 +534,22 @@ color: black;
   border-radius: 4px;
 }
 
+.pagination-container {
+  display: flex;
+  padding: 8px;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-show-more {
   font-size: 20px;
   font-weight: 700;
@@ -299,10 +563,14 @@ color: black;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
-  align-items: center;
+  padding: 14px 20px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -316,10 +584,30 @@ color: black;
   background-color: #F2F2F2;
 }
 
+.hotel-on-page {
+  width: 160px;
+  height: 48px;
+  border: 2px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.hotel-number {
+  margin-left: auto;
+}
+
 .mailing-inner {
+  display: flex;
+  flex-direction: column;
   font-size: 30px;
   line-height: 36px;
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: black;
+}
+
+.mailing-description-inner {
+  margin-top: 46px;
+  margin-bottom: 46px;
 }
