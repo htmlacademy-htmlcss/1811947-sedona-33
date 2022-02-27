@@ -186,10 +186,6 @@ color: black;
   text-transform: uppercase;
 }
 
-.adventages-title {
-  margin-top: ;
-}
-
 .housing {
   width: 400px;
   height: 384px;
@@ -269,6 +265,9 @@ color: black;
 
 .hotel {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hotel-search-question {
@@ -292,6 +291,7 @@ color: black;
   font-family: inherit;
   font-size: 20px;
   line-height: 36px;
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: white;
@@ -362,7 +362,7 @@ color: black;
   margin-right: 61px;
   margin-bottom: 53px;
   margin-left: 72px;
-  list-style-type:
+  list-style-type: none;
 }
 
 .page-footer-number {
@@ -458,12 +458,16 @@ color: black;
 }
 
 .button {
-  display: flex;
-  justify-content: flex-end;
+  display: block;
+  box-sizing: border-box;
   width: 48px;
   height: 48px;
   background-color: #756257;
   border-radius: 4px;
+}
+
+.button:not(:last-child) {
+  margin-right: 8px;
 }
 
 .select-control {
@@ -533,7 +537,6 @@ color: black;
 .pagination-container {
   display: flex;
   padding: 8px;
-  justify-content: space-between;
 }
 
 .pagination {
@@ -541,6 +544,10 @@ color: black;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-show-more {
@@ -556,10 +563,14 @@ color: black;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
-  align-items: center;
+  padding: 14px 20px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -579,7 +590,10 @@ color: black;
   border: 2px solid #E6E6E6;
   box-sizing: border-box;
   border-radius: 4px;
+}
 
+.hotel-number {
+  margin-left: auto;
 }
 
 .mailing-inner {
@@ -595,5 +609,5 @@ color: black;
 
 .mailing-description-inner {
   margin-top: 46px;
-  margin-bottom: 46px`;
+  margin-bottom: 46px;
 }
